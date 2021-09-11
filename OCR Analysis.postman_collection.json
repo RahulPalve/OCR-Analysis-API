@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "8cd47fda-5eb7-42ad-8e3e-8e73997fa717",
+		"name": "OCR Analysis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "search_text",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"file_name\": \"9aa862a8f73d11eaaf483c5282e26c44.csv\",\n    \"position\": [\n        600,\n        600,\n        500,\n        381\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/search/text/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"search",
+						"text",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
